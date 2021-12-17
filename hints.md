@@ -20,42 +20,42 @@ git branch --set-upstream-to=ui124/cbl_xp_211101 cbl_xp_211101  # point the loca
 
 ### == Sync the forked branch ===
 
-	* (optional) make sure you have the right current branch  
-	```
-	git reset --hard ui124/november_2020
-	git reset --hard dev/may_2021
-	```
+* (optional) make sure you have the right current branch  
+```
+git reset --hard ui124/november_2020
+git reset --hard dev/may_2021
+```
 
-	* (optional) create a new branch
-	```
-	git checkout --track dev/may_2021
-	(better than git checkout -b may_2021)
-	```
+* (optional) create a new branch
+```
+git checkout --track dev/may_2021
+(better than git checkout -b may_2021)
+```
 
-	* Check the source list
-	```
-	git remote -vv
-	```
+* Check the source list
+```
+git remote -vv
+```
 
-	* (optional) Add a new stream
-	```
-	git remote add dev https://github.deutsche-boerse.de/dev/cs.xact
-	```
+* (optional) Add a new stream
+```
+git remote add dev https://github.deutsche-boerse.de/dev/cs.xact
+```
 
-	* Check the source list
-	```
-	git remote -vv
-	```
+* Check the source list
+```
+git remote -vv
+```
 
-##### Pull the change from the stream
+* Pull the change from the stream
 ```
 git fetch dev
 ```
-##### stash your changes 
+* stash your changes 
 ```
 git stash
 ```
-##### Merger the stream branch 
+* Merger the stream branch 
 ```
 git merge dev/may_2021  
 git push
