@@ -55,9 +55,10 @@ git fetch dev
 ```
 git stash
 ```
-* Merger the stream branch 
+* Merge the stream branch 
 ```
-git merge dev/may_2021  
+git pull dev may_2021
+(git merge dev/may_2021)
 git push
 (git push --set-upstream ui124 may_2021)
 ```
