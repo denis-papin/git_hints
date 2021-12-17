@@ -53,8 +53,6 @@ git push
 ##### From IntelliJ
 Go to "Git/Uncommit changes/Unstash changes"  and handle the conflict through the GUI
 
-//////////
-
 ### ==  Switch to a new branch ===
 
 ```
@@ -76,8 +74,33 @@ alias gb='git branch -vv'
 alias gl='git log --graph'
 alias gr='git remote -vv'
 
-### Classic pull 
 
+### Useful git commands
+
+##### Classic pull 
 git pull dev november_2020
+
+##### Add a stream 
+git remote add <stream> https://github.com/dev/cs.xact.git
+
+##### Change branch
+
+1. When you are not on a branch but on the right remote stream
+	git checkout <branch>  (if the local branch exists)
+	git checkout -b <branch> (if the local branch must be created)
+	
+Note :  If you checkout both the orgin stream and the fork, the branch names can conflict locally. 
+		Usually, we don't checkout the origin stream
+
+2. When the remote upstream is not defined for the current branch
+
+	git push --set-upstream <stream> <branch>
+	git push --set-upstream ui124 phase1
+	
+	git branch --set-upstream-to=<remote>/<branch> <local-branch>
+	git branch --set-upstream-to=ui124/may_2021  2021
+
+##### Ignore a file
+git update-index --assume-unchanged jboss7xx/configuration/standalone.xml
 
 
