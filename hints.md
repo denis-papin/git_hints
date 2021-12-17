@@ -77,13 +77,13 @@ alias gr='git remote -vv'
 
 ### Useful git commands
 
-##### Classic pull 
+<b>Classic pull </b>
 git pull dev november_2020
 
-##### Add a stream 
+<b>Add a stream </b>
 git remote add <stream> https://github.com/dev/cs.xact.git
 
-##### Change branch
+<b>Change branch</b>
 
 1. When you are not on a branch but on the right remote stream
 	git checkout <branch>  (if the local branch exists)
@@ -100,33 +100,35 @@ Note :  If you checkout both the orgin stream and the fork, the branch names can
 	git branch --set-upstream-to=<remote>/<branch> <local-branch>
 	git branch --set-upstream-to=ui124/may_2021  2021
 
-##### Ignore a file
+<b>Ignore a file</b>
 git update-index --assume-unchanged jboss7xx/configuration/standalone.xml
 
-##### Reset a local repo from the stream
+<b>Reset a local repo from the stream</b>
 git reset --hard ui124/november_2020
 
-##### Rename a stream
+<b>Rename a stream</b>
 git remote rename origin dev 
 
-##### List differences of "staged" files
+<b>List differences of "staged" files</b>
 git diff --staged
 	
-<b>stage and commit all the files</b>
+<b>Stage and commit all the files</b>
+```
 git commit -a -m 'added new benchmarks' 
+```
 	
-##### Remove file
+<b>Remove file</b>
 git rm LISEZMOI : delete a file from git and from the workspace
 git rm -f LISEZMOI : delete a file from git even after the staging , and delete the file from the workspace
 git rm --cached LISEZMOI : delete a file from git even after the staging was done, but leave it in the workspace
 	
-##### Modify the last commit 
+<b>Modify the last commit </b>
 git commit --amend  : remplace le dernier commit; ajoute les nouveaux "staged files" et change le message.
 	
-##### Reset a file from the stream
+<b>Reset a file from the stream</b>
 git reset HEAD CONTRIBUTING.md
 	
-##### Get the commit number at a specific date 
+<b>Get the commit number at a specific date </b>
 git rev-list -n 1 --before="2021-08-18 12:00" dev/cbl_xp_211101
 
 	
