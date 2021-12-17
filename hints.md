@@ -155,6 +155,11 @@ git commit --amend  : remplace le dernier commit; ajoute les nouveaux "staged fi
 ```
 git reset HEAD CONTRIBUTING.md
 ```
+
+<b>Rename a local branch</b>
+```
+git branch -m <new_name>
+```
 	
 <b>Get the commit number at a specific date </b>
 ```
