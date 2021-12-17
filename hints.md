@@ -103,4 +103,31 @@ Note :  If you checkout both the orgin stream and the fork, the branch names can
 ##### Ignore a file
 git update-index --assume-unchanged jboss7xx/configuration/standalone.xml
 
+##### Reset a local repo from the stream
+git reset --hard ui124/november_2020
 
+##### Rename a stream
+git remote rename origin dev 
+
+##### List differences of "staged" files
+git diff --staged
+	
+<b>stage and commit all the files</b>
+git commit -a -m 'added new benchmarks' 
+	
+##### Remove file
+git rm LISEZMOI : delete a file from git and from the workspace
+git rm -f LISEZMOI : delete a file from git even after the staging , and delete the file from the workspace
+git rm --cached LISEZMOI : delete a file from git even after the staging was done, but leave it in the workspace
+	
+##### Modify the last commit 
+git commit --amend  : remplace le dernier commit; ajoute les nouveaux "staged files" et change le message.
+	
+##### Reset a file from the stream
+git reset HEAD CONTRIBUTING.md
+	
+##### Get the commit number at a specific date 
+git rev-list -n 1 --before="2021-08-18 12:00" dev/cbl_xp_211101
+
+	
+	
