@@ -28,8 +28,9 @@ git reset --hard dev/may_2021
 
 * (optional) create a new branch
 ```
-git checkout --track dev/may_2021
+git checkout -b may_2021 dev/may_2021
 (better than git checkout -b may_2021)
+git checkout --track dev/may_2021
 ```
 
 * Check the source list
