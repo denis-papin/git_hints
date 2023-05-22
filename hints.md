@@ -175,9 +175,12 @@ We want to get clean commit history of our `feature` branch to be merged in `dev
 
 ```
 git checkout develop
+(git reset --hard origin/develop)
 git branch -d feature
 git checkout -b feature
-pull origin feature
+pull origin feature --no-commit
+# ... modify other files if needed here
+git commit -m"last commit from feature, conflicts resolution"
 git push -u origin feature
 ```
 
