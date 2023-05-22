@@ -3,4 +3,8 @@ mes changements from denis 2
 mes changements from denis 3
 mes changements from denis 4
 mes changements from denis 5
+<<<<<<< HEAD
 mes changements from denis 7
+=======
+mes changements from denis 9
+>>>>>>> 1324fc9aa3d25f604f1544dc3167262a853eaf5a
