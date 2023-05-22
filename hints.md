@@ -196,5 +196,5 @@ feature$ pull origin feature --no-commit
 # ... modify other files if needed here
 # ... then commit if needed
 feature$ git commit -m"last commit from feature and conflicts resolution"
-feature$ git push origin feature
+feature$ git push
 ```
