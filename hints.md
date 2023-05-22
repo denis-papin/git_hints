@@ -190,6 +190,7 @@ git push -u origin feature
  ```
 # ATTENTION : vérifier sur Gitlab que le dernier commit de feature a été poussé !!!!
 # A partir de la branche `feature` :
+feature$ git fetch --all
 feature$ git reset --hard origin/develop
 feature$ pull origin feature --no-commit
 #if there isn't any conflict with the pull, there is no need to commit later on
