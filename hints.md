@@ -185,4 +185,16 @@ pull origin feature --no-commit
 git commit -m"last commit from feature and conflicts resolution"
 git push -u origin feature
 ```
-
+ or better 
+ 
+ ```
+# ATTENTION : vérifier sur Gitlab que le dernier commit de feature a été poussé !!!!
+# A partir de la branche `feature` :
+feature$ git reset --hard origin/develop
+feature$ pull origin feature --no-commit
+#if there isn't any conflict with the pull, there is no need to commit later on
+# ... modify other files if needed here
+# ... then commit if needed
+feature$ git commit -m"last commit from feature and conflicts resolution"
+feature$ git push origin feature
+```
