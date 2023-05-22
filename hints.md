@@ -179,8 +179,10 @@ git checkout develop
 git branch -d feature
 git checkout -b feature
 pull origin feature --no-commit
+#if there isn't any conflict with the pull, there is no need to commit later on
 # ... modify other files if needed here
-git commit -m"last commit from feature, conflicts resolution"
+# ... then commit if needed
+git commit -m"last commit from feature and conflicts resolution"
 git push -u origin feature
 ```
 
